@@ -24,7 +24,8 @@ namespace Hotel_Management
 
         private void btnDangKi_Click(object sender, EventArgs e)
         {
-            DTO_DangKi dk = new DTO_DangKi(txtTk.Text, txtMk.Text);
+            DTO_DangKi dk = new DTO_DangKi( null,null,txtName.Text, txtPhonenumber.Text, txtEmail.Text, null);
+
             if (busDK.themDangKi(dk))
             {
                 MessageBox.Show("Đăng kí thành công!");
@@ -34,27 +35,39 @@ namespace Hotel_Management
             {
                 MessageBox.Show("Đăng kí không thành công!");
             }
-        
-            
-    //if(txtTk.Text != "" && txtMk.Text != "" && txtName.Text != "" && txtEmail.Text != "" && txtPhonenumber.Text != "" && txtDiachi.Text != "" )
-    //{
-    //    DTO_DangKi dk = new DTO_DangKi( txtTk.Text, txtMk.Text, txtName.Text, txtEmail.Text, txtPhonenumber.Text, txtDiachi.Text);
+            //    DTO_DangKi dk = new DTO_DangKi(txtTk.Text, txtMk.Text);
+            //    if (busDK.themDangKi(dk))
+            //    {
+            //        MessageBox.Show("Đăng kí thành công!");
 
-    //    if (busDK.themDangKi(dk))
-    //    {
-    //        MessageBox.Show("Đăng kí thành công!");
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Đăng kí không thành công!");
+            //    }
 
-    //    }
-    //    else
-    //    {
-    //        MessageBox.Show("Đăng kí không thành công!");
-    //    }
-    //}
-    //else
-    //{
-    //    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
-    //}
-}
+
+            //if (txtTk.Text != "" && txtMk.Text != "" && txtName.Text != "" && txtEmail.Text != "" && txtPhonenumber.Text != "" && txtDiachi.Text != "")
+            //{
+            //    DTO_DangKi dk = new DTO_DangKi(txtTk.Text, txtMk.Text, txtName.Text, txtEmail.Text, txtPhonenumber.Text, txtDiachi.Text);
+
+            //    if (busDK.themDangKi(dk))
+            //    {
+            //        MessageBox.Show("Đăng kí thành công!");
+
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Đăng kí không thành công!");
+            //    }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+            //}
+
+
+        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
