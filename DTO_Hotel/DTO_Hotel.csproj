@@ -89,6 +89,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO_ChiTietBaoCaoDoanhThu.cs" />
+    <Compile Include="DTO_ChiTietHoaDon.cs" />
+    <Compile Include="DTO_ChiTietPhieuThuePhong.cs" />
+    <Compile Include="DTO_HoaDon.cs" />
+    <Compile Include="DTO_KhachHang.cs" />
+    <Compile Include="DTO_LoaiKhachHang.cs" />
+    <Compile Include="DTO_LoaiPhong.cs" />
+    <Compile Include="DTO_PhieuThuePhong.cs" />
+    <Compile Include="DTO_Phong.cs" />
+    <Compile Include="DTO_BCDT.cs" />
     <Compile Include="DTO_DangKi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

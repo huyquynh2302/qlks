@@ -16,17 +16,17 @@ namespace DTO_Hotel
         private string _DANGKI_PHONENUMBER;
         private string _DANGKI_DIACHI;
 
-        public int DANGKI_ID
-        {
-            get
-            {
-                return _DANGKI_ID;
-            }
-            set
-            {
-                _DANGKI_ID = value;
-            }
-        }
+        //public int DANGKI_ID
+        //{
+        //    get
+        //    {
+        //        return _DANGKI_ID;
+        //    }
+        //    set
+        //    {
+        //        _DANGKI_ID = value;
+        //    }
+        //}
         public string DANGKI_TK
         {
             get
@@ -94,10 +94,8 @@ namespace DTO_Hotel
             }
         }
 
-        public DTO_DangKi()
-        {
+        public int DANGKI_ID { get => _DANGKI_ID; set => _DANGKI_ID = value; }
 
-        }
         public DTO_DangKi(string tk, string mk, string name = null, string email = null, string phonenumber = null, string diachi = null)
         {
 
